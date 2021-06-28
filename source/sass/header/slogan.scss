@@ -1,0 +1,63 @@
+.slogan {
+  width: 45%;
+  padding-top: 240px;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    padding-top: 114px;
+    padding-bottom: 79px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 100px;
+    padding-bottom: 69px;
+  }
+}
+
+.slogan__logo {
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 25px;
+    left: 23px;
+  }
+
+  @media (max-width: $mobile-width) {
+    left: 18px;
+  }
+}
+
+.slogan__heading {
+  margin-top: 22px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 64px;
+  color: $main-color;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 19px;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+  }
+}
+
+.slogan__text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  color: $main-color;
+  opacity: 0.8;
+  text-align: left;
+
+  @media (max-width: $tablet-width) {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 95%;
+  }
+}

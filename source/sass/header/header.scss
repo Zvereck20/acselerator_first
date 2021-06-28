@@ -1,0 +1,36 @@
+.header {
+  position: relative;
+  background-color: $heading-color;
+  background-image: url("../img/bike_img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bike_img2x.png");
+  }
+
+  @media (max-width: $tablet-width) {
+    background-position: 0 -50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    background-image: url("../img/bike_img_mobile.png");
+    background-position: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bike_img_mobile2x.png");
+    }
+  }
+}
+
+.header__wrap {
+  max-width: 879px;
+  padding: 0 40px;
+  padding-bottom: 220px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    max-width: none;
+    padding: 0;
+  }
+}

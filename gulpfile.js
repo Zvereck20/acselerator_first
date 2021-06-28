@@ -108,10 +108,14 @@ const reload = done => {
 }
 
 // Watcher
+// const watcher = () => {
+//   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
+//   gulp.watch("source/js/script.js", gulp.series(reload));
+//   gulp.watch("source/*.html", gulp.series(reload));
+// }
+
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/js/script.js", gulp.series(reload));
-  gulp.watch("source/*.html", gulp.series(reload));
+  gulp.watch(["source/sass/**/*.scss", "source/js/script.js", "source/*.html"], gulp.series("styles", reload));
 }
 
 // Build

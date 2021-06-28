@@ -4,3 +4,20 @@
 @import "global/variables.scss";
 @import "global/global.scss";
 
+// Header
+
+@import "header/header.scss";
+@import "header/navigation.scss";
+@import "header/slogan.scss";
+
+// Main
+
+@import "main/form.scss";
+@import "main/advantages.scss";
+@import "main/products.scss";
+@import "main/about.scss";
+@import "main/location.scss";
+
+// Footer
+
+@import "footer/contacts.scss";

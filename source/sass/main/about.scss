@@ -1,0 +1,133 @@
+.about {
+  height: 609px;
+  padding-top: 97px;
+  background-color: $about-background;
+
+  @media (max-width: $tablet-width) {
+    height: 363px;
+    padding-top: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 325px;
+    padding-top: 58px;
+  }
+}
+
+.about__wrap {
+  max-width: 928px;
+  padding: 0 40px;
+  margin: 0 auto;
+
+  @media (max-width: $mobile-width) {
+    padding: 0 15px;
+  }
+}
+
+.about__heading {
+  margin-bottom: 18px;
+  color: $main-color;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 15px;
+  }
+}
+
+.about__text {
+  width: 45%;
+  margin: 0 auto;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: $main-color;
+  opacity: 0.7;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    width: 65%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.about__video {
+  margin-top: 56px;
+  position: relative;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 503px;
+      height: 282px;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 52px;
+
+    img {
+      width: 288px;
+      height: 162px;
+    }
+  }
+}
+
+.about__button {
+  width: 65px;
+  height: 65px;
+  margin: auto;
+  background-color: $excretion-color;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 43.5%;
+  left: 46.5%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/play_icon.svg");
+    background-repeat: no-repeat;
+    top: 22px;
+    left: 28px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 90px;
+    height: 90px;
+
+    top: 34%;
+    left: 43.5%;
+
+    &::before {
+      width: 25px;
+      height: 25px;
+      background-size: contain;
+      top: 33px;
+      left: 40px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 65px;
+    height: 65px;
+    top: 30%;
+    left: 38.5%;
+
+    &::before {
+      width: 20px;
+      height: 20px;
+      top: 23px;
+      left: 28px;
+    }
+  }
+}
