@@ -70,6 +70,10 @@
   list-style: none;
   position: relative;
 
+  a {
+    text-decoration: none;
+  }
+
   &:first-of-type {
     img {
       position: relative;
@@ -130,6 +134,7 @@
     line-height: 34px;
     letter-spacing: -0.5px;
     text-align: center;
+    color: $text-color;
   }
 
   @media (max-width: $tablet-width) {

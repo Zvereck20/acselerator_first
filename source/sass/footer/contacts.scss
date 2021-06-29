@@ -38,6 +38,7 @@
 
     &:hover {
       opacity: 1;
+      transition-duration: 0.3s;
     }
   }
 
@@ -47,6 +48,7 @@
 
   &:hover svg {
     transform: rotateZ(40deg);
+    transition-duration: 0.3s;
   }
 
   @media (max-width: $mobile-width) {
