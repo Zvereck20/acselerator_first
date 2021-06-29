@@ -55,6 +55,13 @@
 
 // Крестик
 
+.navigation--opened {
+  width: 100%;
+  min-height: 100vh;
+  overflow-y: auto;
+  position: fixed;
+}
+
 .navigation--opened .navigation__toggle {
   &::before,
   &::after {
@@ -75,12 +82,6 @@
   &::after {
     transform: rotate(-45deg);
   }
-}
-
-.navigation--wrap {
-  width: 100%;
-  height: 100%;
-  position: fixed;
 }
 
 // Display without JS

@@ -21,17 +21,6 @@ navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('navigation--closed')) {
     navMain.classList.remove('navigation--closed');
     navMain.classList.add('navigation--opened');
-    navMain.classList.add('navigation--wrap');
-
-    const overlayWrap = document.querySelector('.navigation--wrap');
-
-    overlayWrap.addEventListener('click', (evt) => {
-      if (evt.target === overlayWrap) {
-        navMain.classList.add('navigation--closed');
-        navMain.classList.remove('navigation--opened');
-        navMain.classList.remove('navigation--wrap');
-      }
-    });
 
     if (existVerticalScroll()) {
       body.classList.add('body-lock')
@@ -41,7 +30,6 @@ navToggle.addEventListener('click', function () {
   } else {
     navMain.classList.add('navigation--closed');
     navMain.classList.remove('navigation--opened');
-    navMain.classList.remove('navigation--wrap');
 
     if (existVerticalScroll()) {
       body.classList.remove('body-lock')
@@ -49,3 +37,17 @@ navToggle.addEventListener('click', function () {
     }
   }
 });
+
+const navLinks = document.querySelectorAll('.navigation__link');
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    navMain.classList.add('navigation--closed');
+    navMain.classList.remove('navigation--opened');
+
+    if (existVerticalScroll()) {
+      body.classList.remove('body-lock')
+      window.scrollTo(0, body.dataset.scrollY)
+    }
+  })
+})

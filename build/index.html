@@ -96,13 +96,15 @@
         <h2 class="products__heading block-heading">Виды велосипедов</h2>
         <ul class="products__cards-list">
           <li class="products__card">
-            <!-- 1x: 342x503px; 2x: 684x1006px -->
-            <picture>
-              <source type="image/webp" srcset="img/roud_bike.webp 1x, img/roud_bike2x.webp 2x">
-              <img src="img/roud_bike.png" alt="Дорожный велосипед" width="342" height="494"
-                srcset="img/roud_bike2x.png 2x">
-            </picture>
-            <p>Дорожный велосипед</p>
+            <a>
+              <!-- 1x: 342x503px; 2x: 684x1006px -->
+              <picture>
+                <source type="image/webp" srcset="img/roud_bike.webp 1x, img/roud_bike2x.webp 2x">
+                <img src="img/roud_bike.png" alt="Дорожный велосипед" width="342" height="494"
+                  srcset="img/roud_bike2x.png 2x">
+              </picture>
+              <p>Дорожный велосипед</p>
+            </a>
           </li>
           <li class="products__card">
             <!-- 1x: 342x566px; 2x: 684x1132px -->
@@ -153,7 +155,7 @@
     </section>
   </main>
   <footer class="footer">
-    <section class="contacts" id="contacts">
+    <div class="contacts" id="contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
       <ul class="contacts__list">
         <li class="contacts__item">
@@ -169,7 +171,7 @@
           <a href="tel:+7(499)-784-684-46">+7 (499) -784-684-46</a>
         </li>
       </ul>
-    </section>
+    </div>
   </footer>
 
   <script src="js/script.js"></script>
