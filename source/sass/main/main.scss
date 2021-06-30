@@ -1,0 +1,34 @@
+.main__container {
+  background-color: $heading-color;
+  background-image: url("../img/bike_img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bike_img2x.png");
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: none;
+    background-color: inherit;
+  }
+}
+
+.main__wrap {
+  max-width: 879px;
+  padding: 0 40px;
+  padding-top: 317px;
+  padding-bottom: 220px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    max-width: 1024px;
+    padding: 0;
+    margin: 0;
+  }
+
+}

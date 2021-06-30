@@ -43,31 +43,35 @@
           </li>
         </ul>
       </nav>
-      <section class="slogan">
-        <a class="slogan__logo">
-          <img src="img/logo.svg" alt="Логотип Moon" width="68" height="21">
-        </a>
-        <h1 class="slogan__heading">Мы продаем
-          велосипеды</h1>
-        <p class="slogan__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-      </section>
     </div>
   </header>
 
   <main class="main">
-    <section class="form">
-      <h2 class="form__heading">Заполните поля ниже и мы подберем велосипед Вашей мечты</h2>
-      <form action="#" method="GET" class="form__field">
-        <label for="name">
-          <input type="text" id="name" name="name" required placeholder="Введите Ваше Имя">
-        </label>
-        <label for="telephone">
-          <input type="tel" id="telephone" name="telephone" required placeholder="Введите Ваш номер телефона"
-            pattern="\d*">
-        </label>
-        <button class="button" type="submit">Подобрать велосипед мечты</button>
-      </form>
-    </section>
+    <div class="main__container">
+      <div class="main__wrap">
+        <section class="slogan">
+          <a class="slogan__logo">
+            <img src="img/logo.svg" alt="Логотип Moon" width="68" height="21">
+          </a>
+          <h1 class="slogan__heading">Мы продаем
+            велосипеды</h1>
+          <p class="slogan__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+        </section>
+        <section class="form">
+          <h2 class="form__heading">Заполните поля ниже и мы подберем велосипед Вашей мечты</h2>
+          <form action="#" method="GET" class="form__field">
+            <label for="name">
+              <input type="text" id="name" name="name" required placeholder="Введите Ваше Имя">
+            </label>
+            <label for="telephone">
+              <input type="tel" id="telephone" name="telephone" required placeholder="Введите Ваш номер телефона"
+                pattern="\d*">
+            </label>
+            <button class="button" type="submit">Подобрать велосипед мечты</button>
+          </form>
+        </section>
+      </div>
+    </div>
 
     <section class="advantages" id="advantages">
       <h2 class="advantages__heading block-heading">Несколько фактов о нас</h2>
@@ -100,7 +104,7 @@
               <!-- 1x: 342x503px; 2x: 684x1006px -->
               <picture>
                 <source type="image/webp" srcset="img/roud_bike.webp 1x, img/roud_bike2x.webp 2x">
-                <img src="img/roud_bike.png" alt="Дорожный велосипед" width="342" height="494"
+                <img src="img/roud_bike.png" alt="Дорожный велосипед" width="342" height="503"
                   srcset="img/roud_bike2x.png 2x">
               </picture>
               <p>Дорожный велосипед</p>
@@ -122,7 +126,7 @@
               <!-- 1x: 342x513px; 2x: 684x1026px -->
               <picture>
                 <source type="image/webp" srcset="img/kids_bike.webp 1x, img/kids_bike2x.webp 2x">
-                <img src="img/kids_bike.png" alt="Детский велосипед" width="342" height="495"
+                <img src="img/kids_bike.png" alt="Детский велосипед" width="342" height="513"
                   srcset="img/kids_bike2x.png 2x">
               </picture>
               <p>Детский велосипед</p>

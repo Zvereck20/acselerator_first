@@ -1,6 +1,5 @@
 .form {
   width: 326px;
-  position: absolute;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -19,6 +18,7 @@
 }
 
 .form__heading {
+  margin-top: 7px;
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;

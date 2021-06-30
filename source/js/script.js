@@ -51,3 +51,7 @@ navLinks.forEach((link) => {
     }
   })
 })
+
+const rep = document.querySelector('#telephone');
+
+rep.setCustomValidity('Введите данные в формате +7 (XXX)-XXX-XX-XX');

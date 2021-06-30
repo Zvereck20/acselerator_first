@@ -8,10 +8,11 @@
 
 @import "header/header.scss";
 @import "header/navigation.scss";
-@import "header/slogan.scss";
 
 // Main
 
+@import "main/main.scss";
+@import "main/slogan.scss";
 @import "main/form.scss";
 @import "main/advantages.scss";
 @import "main/products.scss";

@@ -1,16 +1,30 @@
 .slogan {
   width: 45%;
-  padding-top: 240px;
 
   @media (max-width: $tablet-width) {
     width: 100%;
     padding-top: 114px;
     padding-bottom: 79px;
+
+    background-color: $heading-color;
+    background-image: url("../img/bike_img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bike_img2x.png");
+    }
   }
 
   @media (max-width: $mobile-width) {
     padding-top: 100px;
     padding-bottom: 69px;
+    background-image: url("../img/bike_img_mobile.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bike_img_mobile2x.png");
+    }
   }
 }
 
