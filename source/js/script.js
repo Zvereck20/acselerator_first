@@ -38,6 +38,16 @@ navToggle.addEventListener('click', function () {
   }
 });
 
+document.addEventListener('keydown', (evt) => {
+  evt.preventDefault();
+  if (evt.keyCode === 27) {
+    if (!navMain.classList.contains('navigation--closed')) {
+      navMain.classList.remove('navigation--opened');
+      navMain.classList.add('navigation--closed');
+    }
+  }
+});
+
 const navLinks = document.querySelectorAll('.navigation__link');
 
 navLinks.forEach((link) => {
