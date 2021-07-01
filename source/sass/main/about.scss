@@ -118,7 +118,8 @@
     height: 90px;
 
     top: 34%;
-    left: 43.5%;
+    left: 50%;
+    transform: translate(-50%);
 
     &::before {
       width: 25px;
@@ -133,7 +134,7 @@
     width: 65px;
     height: 65px;
     top: 30%;
-    left: 38.5%;
+    left: 50%;
 
     &::before {
       width: 20px;
