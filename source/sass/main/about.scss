@@ -1,7 +1,7 @@
 .about {
-  height: 609px;
   padding-top: 97px;
   background-color: $about-background;
+  position: relative;
 
   @media (max-width: $tablet-width) {
     height: 363px;
@@ -36,12 +36,14 @@
 .about__text {
   width: 45%;
   margin: 0 auto;
+  padding-bottom: 482px;
   font-weight: 300;
   font-size: 16px;
   line-height: 28px;
   color: $main-color;
   opacity: 0.7;
   text-align: center;
+
 
   @media (max-width: $tablet-width) {
     width: 65%;
@@ -53,14 +55,13 @@
 }
 
 .about__video {
-  margin-top: 56px;
-  position: relative;
+  position: absolute;
+  bottom: -106px;
 
   @media (max-width: $tablet-width) {
-    margin-top: 43px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    bottom: -95px;
+    left: 50%;
+    transform: translate(-50%);
 
     img {
       width: 503px;
@@ -70,7 +71,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-top: 52px;
+    bottom: -57px;
 
     img {
       width: 288px;
@@ -117,7 +118,7 @@
     width: 90px;
     height: 90px;
 
-    top: 34%;
+    top: 33%;
     left: 50%;
     transform: translate(-50%);
 
@@ -133,7 +134,7 @@
   @media (max-width: $mobile-width) {
     width: 65px;
     height: 65px;
-    top: 30%;
+    top: 28.5%;
     left: 50%;
 
     &::before {

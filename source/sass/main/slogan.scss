@@ -21,6 +21,7 @@
     padding-top: 100px;
     padding-bottom: 69px;
     background-image: url("../img/bike_img_mobile.png");
+    background-position-y: -2px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/bike_img_mobile2x.png");

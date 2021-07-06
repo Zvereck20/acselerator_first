@@ -18,10 +18,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   @media (max-width: $tablet-width) {
     padding-top: 17px;
+    justify-content: space-between;
   }
 
   @media (max-width: $mobile-width) {
@@ -30,7 +31,8 @@
 }
 
 .advantages__item {
-  flex-basis: 25%;
+  margin: 0 6px;
+  flex-basis: 24%;
   list-style: none;
   text-align: center;
 
@@ -50,6 +52,7 @@
 
   @media (max-width: $tablet-width) {
     flex-basis: 50%;
+    margin: 0;
     margin-bottom: 18px;
   }
 

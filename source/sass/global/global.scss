@@ -20,6 +20,10 @@
   position: relative;
 }
 
+footer {
+  grid-row: 3/4;
+}
+
 .body-lock {
   overflow-y: scroll;
   position: fixed;
@@ -53,6 +57,7 @@
   color: $text-color;
   background-color: $excretion-color;
   border: none;
+  cursor: pointer;
 
   &:hover {
     background-color: $main-color;

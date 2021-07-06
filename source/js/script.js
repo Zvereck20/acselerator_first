@@ -1,49 +1,32 @@
 // Navigation block
 
-const body = document.querySelector('body')
+const body = document.querySelector('main')
+const header = document.querySelector('header');
 const navMain = document.querySelector('.navigation');
 const navToggle = document.querySelector('.navigation__toggle');
 
 navMain.classList.remove('navigation--nojs');
-
-const existVerticalScroll = () => {
-  return document.body.offsetHeight > window.innerHeight
-}
-
-const getBodyScrollTop = () => {
-  return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body && document.body.scrollTop);
-}
+header.classList.remove('header--nojs')
 
 navToggle.addEventListener('click', function () {
-
-  body.dataset.scrollY = getBodyScrollTop();
 
   if (navMain.classList.contains('navigation--closed')) {
     navMain.classList.remove('navigation--closed');
     navMain.classList.add('navigation--opened');
-
-    if (existVerticalScroll()) {
-      body.classList.add('body-lock')
-      body.style.top = `-${body.dataset.scrollY}px`
-    }
-
+    body.classList.add('body-lock')
   } else {
     navMain.classList.add('navigation--closed');
     navMain.classList.remove('navigation--opened');
-
-    if (existVerticalScroll()) {
-      body.classList.remove('body-lock')
-      window.scrollTo(0, body.dataset.scrollY)
-    }
+    body.classList.remove('body-lock')
   }
 });
 
 document.addEventListener('keydown', (evt) => {
-  evt.preventDefault();
   if (evt.keyCode === 27) {
     if (!navMain.classList.contains('navigation--closed')) {
       navMain.classList.remove('navigation--opened');
       navMain.classList.add('navigation--closed');
+      body.classList.remove('body-lock')
     }
   }
 });
@@ -54,11 +37,7 @@ navLinks.forEach((link) => {
   link.addEventListener('click', () => {
     navMain.classList.add('navigation--closed');
     navMain.classList.remove('navigation--opened');
-
-    if (existVerticalScroll()) {
-      body.classList.remove('body-lock')
-      window.scrollTo(0, body.dataset.scrollY)
-    }
+    body.classList.remove('body-lock')
   })
 })
 

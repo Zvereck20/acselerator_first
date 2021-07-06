@@ -13,3 +13,9 @@
     padding: 0;
   }
 }
+
+.header--nojs {
+  @media (max-width: $tablet-width) {
+    position: static;
+  }
+}
